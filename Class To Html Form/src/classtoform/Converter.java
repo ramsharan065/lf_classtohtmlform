@@ -5,8 +5,16 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Field;
-
+/**
+ * 
+ * @author ramsharan
+ *
+ */
 public class Converter {
+	/**
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args){
 		//if(args.length)
 		String className = args[0];
@@ -34,6 +42,13 @@ public class Converter {
 			e.printStackTrace();
 		}
 	}
+	/**
+	 * 
+	 * @param attributeName
+	 * @param title
+	 * @param htmlFile
+	 * @throws IOException
+	 */
 	protected static void makeForm(String[] attributeName, String title, File htmlFile) throws IOException{
 		String upperPart="<!DOCTYPE html >" +
 				"<html>" +
